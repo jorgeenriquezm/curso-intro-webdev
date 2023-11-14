@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        body{margin: 0;height: 100vh;}
+        main{display: grid; grid-template-rows: 50% 50%;grid-template-columns: 50% 50%;height: 100%;}
+        main div:nth-child(even){background-color: red; color:black;}
+        main div:nth-child(odd){background-color: black; color:red;}
+    </style>
+</head>
+<body>
+    <main>
+        <div>Elemento 1</div>
+        <div>Elemento 2</div>
+        <div>Elemento 3</div>
+        <div>Elemento 4</div>
+    </main>
+</body>
+</html>
