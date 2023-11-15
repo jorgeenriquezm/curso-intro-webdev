@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        body{margin: 0;height: 100vh;}
+        main{display: flex; background-color: red;
+            /*Cambiar la dirección fila > columna*/
+            /*flex-direction: column;*/
+            /*Colocación de los hijos*/
+            /*justify-content: space-between;*/
+            /*justify-content: center;*/
+            /*justify-content: flex-end;*/
+
+            /*Centrar verticalmente*/
+            /* height: 300px;
+            justify-content:center;
+            align-items: center; */
+        }
+        main>div{
+            width: 75px; height: 75px; background-color: black; color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div>Elemento 1</div>
+        <div>Elemento 2</div>
+        <div>Elemento 3</div>
+        <div>Elemento 4</div>
+    </main>
+</body>
+</html>
