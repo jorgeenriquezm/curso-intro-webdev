@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        body{margin: 0;height: 100vh;}
+        div{height: 50%;} 
+        div:nth-child(1){background-color: lightgoldenrodyellow;}
+        div:nth-child(2){display: none; background-color: lightskyblue;}
+        div:nth-child(3){display: none; background-color: lightsalmon;}
+        @media (min-width: 800px){
+            div:nth-child(1){display: none;}
+            div:nth-child(2){display: block;}
+            div:nth-child(3){display: none;}
+        }
+        @media (min-width: 1280px){
+            div:nth-child(1){display: none;}
+            div:nth-child(2){display: none;}
+            div:nth-child(3){display: block;}
+        }
+    </style>
+</head>
+<body>
+    <div>Móvil</div>
+    <div>Portátil</div>
+    <div>Desktop</div>
+</body>
+</html>
