@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Datalist</title>
+</head>
+<body>
+    <!-- importante: al input tenemos que quitarle el type text -->
+    <input list="genero">
+    <!-- El id del datalist tiene que coincidir con el list del input de arriba -->
+    <datalist id="genero">
+        <!-- En las opciones no se pone el texto, va directamente en el value -->
+        <option value="Masculino"></option>
+        <option value="Femenino"></option>
+        <option value="No especificado"></option>
+        <option value="No lo quiero decir"></option>
+        <option value="No binario"></option>
+        <option value="Otro"></option>
+    </datalist>
+</body>
+</html>
