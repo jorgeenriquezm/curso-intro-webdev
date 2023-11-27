@@ -24,7 +24,7 @@ html, body{
 }
 .ancho-50{
     width: 50%;
-    /* min-width: 200px; */
+    min-width: 200px;
 }
 .ancho-200-px{
     width: 200px;
