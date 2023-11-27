@@ -1,0 +1,18 @@
+#gris{
+    background-color: lightgray;
+    width: 80%;
+    height: 175px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#cerrar{
+    background-color: red;
+    width: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
