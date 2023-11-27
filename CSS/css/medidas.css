@@ -1,0 +1,42 @@
+*{
+    min-height: 150px;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.ocupa-todo{
+    width: 100vw;
+    height: 100vh;
+}
+.ocupa-mitad{
+    width: 50%;
+    height: 50%;
+}
+.fondo-rojo{
+    background-color: red;
+}
+.fondo-verde{
+    background-color: green;
+}
+.fondo-gris{
+    background-color: lightslategray;
+}
+.ancho-50{
+    width: 50%;
+    /* min-width: 200px; */
+}
+.ancho-200-px{
+    width: 200px;
+}
+
+/******************************* EM vs REM *******************************/
+.em3{
+    font-size: 3em;
+}
+.em150{
+    font-size: 1.5em;
+}
+.rem1{
+    font-size: 1rem;
+}
