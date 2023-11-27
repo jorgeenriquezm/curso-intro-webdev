@@ -1,0 +1,11 @@
+article{
+    width: 300px;
+    background-color: aqua;
+    overflow: hidden;
+    padding: 32px;
+    border-radius: 19px;
+
+}
+img{
+    width: 200px;
+}
