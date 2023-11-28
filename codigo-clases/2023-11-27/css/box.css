@@ -1,0 +1,11 @@
+#inicial{
+    width: 150px;
+    border: 15px solid red;
+    padding: 15px;
+}
+#final{
+    width: 150px;
+    border: 15px solid green;
+    padding: 15px;
+    box-sizing: border-box;
+}
