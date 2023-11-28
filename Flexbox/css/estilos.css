@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100vh;
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: green;
+}
+.azul{
+    background-color: blue;
+}
+main{
+    border: 3px solid black;
+    display: flex;
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    /* height: 500px;
+    align-items: center;
+    justify-content: center; */
+}
+/* main>div{
+    height: 100px;
+    flex-grow: 1;
+} */
