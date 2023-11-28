@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    background-color: bisque;
+}
+body{
+    display: flex;
+}
+main{
+    height: 50%;
+    align-self: center;
+    flex-grow: 1;
+    gap: 10px;
+    display: flex;
+    background-color: lightgray;
+}
+main>div{
+    flex-grow: 1;
+    background-color: azure;
+}
+div.ficha{
+    display: flex;
+    flex-direction: column;
+}
+div.nombre{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.imagen{
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.imagen>img{
+    max-width: 100px;
+    max-height: 100px;
+}
+div.boton{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aquamarine;
+    cursor: pointer;
+}

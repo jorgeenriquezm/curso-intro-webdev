@@ -7,8 +7,8 @@ html, body{
     display: flex;
 }
 #principal{
-    flex-grow: 1;
+/*     flex-grow: 1;
     height: 50%;
     align-self: center;
-    background-color: rgb(76, 27, 103);
+    background-color: rgb(76, 27, 103); */
 }
