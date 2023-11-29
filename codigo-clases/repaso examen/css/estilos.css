@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100vh;
+}
+body{
+    display: flex;
+}
+main{
+    background-color: blanchedalmond;
+    /* le ponemos height 50% para que ocupe la mitad de su padre (body) */
+    height: 50%;
+    /* flex-grow nos permite coger todo el espacio sobrante del padre */
+    flex-grow: 1;
+    /* con align-self le decimos que se auto coloque en el centro */
+    align-self: center;
+    /* ponemos display flex para colocarlos en horizontal y ajustados*/
+    display: flex;
+}
+.crece{
+    /*a los hijos, le ponemos flex-grow para que se reparta entre ellos el espacio sobrante del padre*/
+    flex-grow: 1;
+}
