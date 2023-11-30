@@ -18,8 +18,25 @@ main{
     align-self: center;
     /* ponemos display flex para colocarlos en horizontal y ajustados*/
     display: flex;
+    gap: 10px;
 }
 .crece{
     /*a los hijos, le ponemos flex-grow para que se reparta entre ellos el espacio sobrante del padre*/
     flex-grow: 1;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+.crece header{
+    flex-grow: 1;
+}
+.crece div{
+    flex-grow: 2;
+}
+.crece footer{
+    flex-grow: 1;
+}
+div.imagen img{
+    max-width:100px;
+    max-height:100px;
 }
