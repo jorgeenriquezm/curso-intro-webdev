@@ -4,12 +4,14 @@
 }
 html, body{
     height: 100vh;
+    background-color: rgb(232, 231, 231);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
     display: flex;
 }
 main{
-    background-color: blanchedalmond;
+    background-color: rgb(220, 220, 220);
     /* le ponemos height 50% para que ocupe la mitad de su padre (body) */
     height: 50%;
     /* flex-grow nos permite coger todo el espacio sobrante del padre */
@@ -18,32 +20,58 @@ main{
     align-self: center;
     /* ponemos display flex para colocarlos en horizontal y ajustados*/
     display: flex;
+    /* la propiedad gap nos permite dejar un margen entre los hijos de este elemento */
     gap: 10px;
+    /* con padding creamos ese margen interno para que los hijos/contenido no estén pegados a los bordes */
+    padding: 10px;
 }
 .crece{
     /*a los hijos, le ponemos flex-grow para que se reparta entre ellos el espacio sobrante del padre*/
-    flex-grow: 1;
-    background-color: lightgrey;
+    border-radius: 5px;
+    background-color: rgb(200, 200, 200);
+    /* Le damos display flex y direction column para que cambie la dirección a vertical */
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 .crece header{
-    flex-grow: 1;
+    height: 20%;
+    color: white;
+    /* font-weight nos permite ponerle negrita (bold) a un texto */
+    font-weight: bold;
+    /* Le damos flex para poder alinear horizontal y verticalmente con justify y align */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .crece div{
-    flex-grow: 2;display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.crece footer{
-    flex-grow: 1;
+    height: 60%;
+    /* Le damos flex para poder alinear horizontal y verticalmente con justify y align */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.crece footer{
+    height: 20%;
+    /* Le damos flex para poder alinear horizontal y verticalmente con justify y align */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.crece button{
+    transition: all .25s;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    /* pointer hacer que aparezca la típica mano de los link, para indicar que ese elemento "hace algo" */
+    cursor: pointer;
+}
+/* hover nos permite aplicar estilos SÓLO cuando situamos el puntero encima */
+/* importante recordar que en mobile no tenemos hover */
+.crece button:hover{
+    background-color: rgb(160, 160, 159);
+}
+/* con las imágenes, siempre resulta más práctico que estén metidas en un elemento que nos permita mayor flexibilidad */
 div.imagen img{
     max-width:100px;
     max-height:100px;
