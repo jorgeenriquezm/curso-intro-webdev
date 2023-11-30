@@ -1,0 +1,27 @@
+:root{
+    --color-primario:rgb(225, 0, 255);
+    --color-secundario:rgb(160, 241, 222);
+    --texto-destacado:1.5em;
+    --alto-principal:100px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-size: var(--texto-destacado);
+    height: var(--alto-principal);
+}
+main{
+    color: var(--color-primario);
+    height: 400px;
+}
+footer{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-size: var(--texto-destacado);
+    height: var(--alto-principal);
+}
