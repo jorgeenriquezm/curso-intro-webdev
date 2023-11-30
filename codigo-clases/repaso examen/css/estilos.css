@@ -29,12 +29,20 @@ main{
 }
 .crece header{
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .crece div{
-    flex-grow: 2;
+    flex-grow: 2;display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .crece footer{
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 div.imagen img{
     max-width:100px;
