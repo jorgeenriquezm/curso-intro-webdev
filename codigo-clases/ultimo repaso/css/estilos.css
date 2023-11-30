@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100vh;
+}
+body{
+    display: flex;
+}
+main{
+    background-color: lightgray;
+    height: 50%;
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    gap: 10px;
+}
+div.ficha{
+    flex-grow: 1;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.ficha header{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ficha>div{
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ficha footer{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 100px;
+    max-height: 100px;
+}
