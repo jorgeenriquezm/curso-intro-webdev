@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+<body>
+    <picture>
+        <source media="(min-width:1200px)" srcset="./img/imagen-extragrande.png"/>
+        <source media="(min-width:800px)" srcset="./img/imagen-grande.png"/>
+        <source media="(min-width:640px)" srcset="./img/imagen-mediana.png"/>
+        <img src="./img/imagen-pequena.png" alt="Imagen para mobile">
+    </picture>
+    <!-- Hay que poner las imágenes de grande a pequeña para que funciones como esperamos -->
+</body>
+</html>
