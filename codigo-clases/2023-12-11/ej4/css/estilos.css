@@ -1,5 +1,7 @@
 #elegido{
     background-color: aqua;
+    position: relative;
+    top: 50px;
 }
 .naranja{
     background-color: orange;
@@ -7,3 +9,4 @@
 p{
     background-color: red;
 }
+

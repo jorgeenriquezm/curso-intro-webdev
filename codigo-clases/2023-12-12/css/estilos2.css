@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+.bloque{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    padding-top: 42px;
+}
+#elemento1{
+    background-color: aquamarine;
+    position: relative;
+    left: 100px;
+}
+#elemento2{
+    background-color: pink;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
+#elemento3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    padding-top: 130px;
+}
+.minibloque{
+    width: 30px;
+    height: 30px;
+    left: calc(50% - 15px);
+    background-color: orange;
+}
+#elemento31{
+    position: absolute; 
+    top: 0;
+}
+#elemento32{
+    position: absolute;
+    bottom: 0;
+}

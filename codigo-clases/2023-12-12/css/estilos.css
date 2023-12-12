@@ -1,0 +1,13 @@
+#padre{
+    width: 300px;
+    height: 250px;
+    background-color: aqua;
+    position: relative;
+}
+#cerrar{
+    background-color: red;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
