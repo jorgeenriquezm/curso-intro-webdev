@@ -21,7 +21,7 @@ main *{
     justify-content: center;
     align-items: center;
 }
-header, footer{
+main>header, main>footer{
     height: 60px;
 }
 nav, section, aside{
@@ -36,6 +36,9 @@ section{
 section *{
     background-color: lightgray;
     flex-grow: 1;
+}
+section>article{
+    flex-grow: 10;
 }
 @media(min-width:768px){
     main>header, main>footer{
