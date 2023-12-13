@@ -1,0 +1,60 @@
+html, body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* :nth-of-type(x) nos permite seleccionar un elemento dentro de un grupo
+aquí por ejemplo selecciono todos los divs, y de esa selección voy eligiendo
+el que me interesa en cada caso. nth-of-type(1), nth-of-type(2)... */
+div:nth-of-type(1){
+    background-color: lightblue;
+}
+div:nth-of-type(2){
+    background-color: lightcoral;
+}
+div:nth-of-type(3){
+    background-color: lightcyan;
+}
+div:nth-of-type(4){
+    background-color: lightpink;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    /* con flex-basis podemos modificar el ancho del item, width a secas no funciona en items flex */
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* versión corta de las tres líneas anteriores */
+    /*flex: 0 0 50%;*/
+}
+
+@media(min-width:480px){
+    div{
+        /* Usamos la versión corta y cambiamos el ancho a 50% */
+        flex: 0 0 50%;
+        font-size: 1em;
+        height: 350px;
+    }
+    div:nth-of-type(4){
+        /* Los hijos tienen por defecto orden 0, podemos modificar el orden
+        con la propiedar order. Cuanto menos sea el número, antes aparecerá */
+        order: -1;
+    }
+}
+@media(min-width:768px){
+    div:nth-of-type(1), div:nth-of-type(4){
+        height: 150px;
+        flex: 0 0 100%;
+    }div:nth-of-type(4){
+        order: 0;
+    }
+}
