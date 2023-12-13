@@ -48,7 +48,6 @@ html, body{
         max-width: 1024px;
         /* margin 0 auto también nos centra en horizontal, especialmente necesario
         cuando estamos trabajando con elementos block aunque este sea flex */
-        /*margin: 0 auto;*/
-        justify-self: center;
+        margin: 0 auto;
     }
 }
