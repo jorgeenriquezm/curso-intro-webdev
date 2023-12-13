@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bloque{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bloque1{
+    background-color: lightcoral;
+}
+#bloque2{
+    background-color: lightpink;
+}
+#bloque3{
+    background-color: lightsalmon;
+}
+#bloque4{
+    background-color: lightgoldenrodyellow;
+}
+
+@media(min-width:480px){
+    .bloque:nth-of-type(2), .bloque:nth-of-type(3){
+        width: 50%;
+    }
+}
+@media(min-width:768px){
+    .bloque:nth-of-type(2), .bloque:nth-of-type(3), .bloque:nth-of-type(4){
+        height: 90%;
+        width: 33.33%;
+    }
+}
+@media(min-width:1024px){
+    body{
+        /* le ponemos el max-width para hacer un diseño "boxed" de forma que
+        nuestra web nunca exceda ese ancho y quede encajada en el centro */
+        max-width: 1024px;
+        /* margin 0 auto también nos centra en horizontal, especialmente necesario
+        cuando estamos trabajando con elementos block aunque este sea flex */
+        /*margin: 0 auto;*/
+        justify-self: center;
+    }
+}
