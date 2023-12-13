@@ -2,14 +2,18 @@
     box-sizing: border-box;
 }
 html, body{
+    margin: 0;
+    padding: 0;
     height: 100vh;
 }
 main{
+    background-color: rgb(34, 34, 34);
     display: flex;
     flex-wrap: wrap;
 }
 main *{
     background-color: grey;
+    border-radius: 5px;
     width: 100%;
     display: flex;
     justify-content: center;
