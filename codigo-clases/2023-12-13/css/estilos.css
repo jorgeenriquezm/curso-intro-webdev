@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main *{
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header, footer{
+    height: 60px;
+}
+nav, section, aside{
+    height: 300px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+section *{
+    background-color: lightgray;
+    flex-grow: 1;
+}
+@media(min-width:768px){
+    nav, aside{
+        width: 25%;
+    }
+    section{
+        width: 50%;
+    }
+}
