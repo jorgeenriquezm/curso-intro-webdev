@@ -10,6 +10,8 @@ main{
     background-color: rgb(34, 34, 34);
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
 }
 main *{
     background-color: grey;
@@ -27,6 +29,8 @@ nav, section, aside{
 }
 section{
     display: flex;
+    gap: 10px;
+    padding: 10px;
     flex-direction: column;
 }
 section *{
@@ -34,10 +38,23 @@ section *{
     flex-grow: 1;
 }
 @media(min-width:768px){
+    main>header, main>footer{
+        height: 100px;
+    }
+    nav, section, aside{
+        height: calc(100vh - 240px);
+    }
     nav, aside{
         width: 25%;
     }
     section{
         width: 50%;
+        width: calc(50% - 20px);
+    }
+    section>header, section>footer{
+        flex-grow: 1;
+    }
+    section>article{
+        flex-grow: 20;
     }
 }
