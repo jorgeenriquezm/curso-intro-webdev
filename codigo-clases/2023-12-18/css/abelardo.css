@@ -1,0 +1,56 @@
+*{box-sizing: border-box;}
+body{
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+header{
+    height: 35%;
+    background-color: rgb(255, 109, 103);
+}
+img{
+    width: 180px;
+    border-radius: 90px;
+    overflow: hidden;
+    border: 15px solid rgb(255, 109, 103);
+    position: relative;
+    top: 30px;
+    left: calc(50% - 90px);
+}
+#nombre{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#trabajo{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer{
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+button{
+    background-color: rgb(255, 109, 103);
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 44px;
+    border-radius: 22px;
+}
