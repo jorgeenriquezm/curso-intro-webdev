@@ -1,0 +1,102 @@
+*{box-sizing: border-box;}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+main>header{
+    background-color: azure;
+    height: 60px;
+}
+.soyFlex{
+    display: flex;
+}
+p{
+    padding: 16px;
+}
+#destacada{
+    /* background-image: url('https://mandolina.co/wp-content/uploads/2023/08/pizza-americana.jpg'); */
+    background-image: url('../img/pizza.jpg');
+    background-position: center;
+}
+#ul-principal{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+#ul-principal li{
+    margin-right: 10px;
+    display: flex;
+}
+#destacada{
+    min-height: 325px;
+    background-size: cover;
+    background-position: center;
+}
+#bajo-destacada{
+    background-color:blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+#bajo-izquierda{
+    min-height: 200px;
+    background-color: blueviolet;
+}
+#bajo-centro{
+    min-height: 200px;
+    background-color: brown;
+}
+#bajo-derecha{
+    min-height: 200px;
+    background-color: aquamarine;
+}
+#menu-usuario{
+    display: none;
+}
+
+@media(min-width:768px){
+    body{
+        background-color: red;
+    }
+    main>header{
+        height: auto;
+    }
+    #ul-principal{
+        display: block;
+    }
+    #bajo-destacada{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #bajo-destacada>div{
+        overflow: hidden;
+        width: 50%;
+        min-height: 300px;
+    }
+}
+
+@media(min-width:1200px){
+    header{display: flex;}
+    #menu-principal{
+        flex-grow: 10;
+    }
+    #menu-usuario{
+        flex-grow: 1;
+        align-items: center;
+    }
+    #menu-usuario img{
+        max-height: 40px;
+    }
+    #bajo-destacada>div{
+        width: 33%;
+    }
+    #ul-principal{
+        display: flex;
+        padding: 16px;
+    }
+    #menu-usuario{
+        display: flex;
+    }
+}
