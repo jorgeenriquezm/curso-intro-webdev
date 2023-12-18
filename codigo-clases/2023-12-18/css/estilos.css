@@ -1,0 +1,60 @@
+*{box-sizing: border-box;}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+}
+
+.ficha{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+}
+#arriba{
+    background-color: rgb(255, 103, 109);
+    height: 35%;
+    border-radius: 20px 20px 0 0;
+}
+#arriba>div{
+    width: 200px;
+    border-radius: 100px;
+    border: 15px solid rgb(255, 103, 109);
+    overflow: hidden;
+    position: relative;
+    top: 25px;
+    left: calc(50% - 100px);
+}
+#arriba img{
+    width: 100%;
+}
+#abajo{
+    height: 65%;
+    position: relative;
+}
+h2, h3{
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+footer{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+}
+button{
+    min-width: 100px;
+    height: 40px;
+    padding: 12px;
+    color: white;
+    background-color: rgb(255, 103, 109);
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: rgb(195, 12, 241);
+}
