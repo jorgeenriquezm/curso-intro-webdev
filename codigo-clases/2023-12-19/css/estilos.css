@@ -1,0 +1,75 @@
+*{box-sizing: border-box;}
+body{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+nav{
+    height: 100%;
+}
+nav a, footer>p{
+    padding: 10px;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover, footer>p:hover{
+    background-color: black;
+    color: white;
+
+}
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+h1{
+    font-size: 1.5rem;
+    border-bottom: 4px dotted black;
+    margin: 10px 0;
+}
+
+.isSection{
+    min-height: 300px;
+    border: 1px solid darkgray;
+}
+#s1{
+    width: 100%;
+}
+#s1>p{
+    height: 180px;
+    overflow-y: scroll;
+}
+#s2{
+    background-image: url('https://images.stockx.com/360/Air-Jordan-1-Retro-High-Comme-des-Garcons-White/Images/Air-Jordan-1-Retro-High-Comme-des-Garcons-White/Lv2/img01.jpg?fm=jpg&auto=compress&w=480&dpr=2&updated_at=1644826497&h=320&q=60');
+}
+#s3{
+    background-image: url('https://sneakerbardetroit.com/wp-content/uploads/2019/06/CDG-Homme-Plus-Air-Jordan-1-Black-CN5738-001-Release-Date.jpg');
+}
+#s2, #s3{
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+}
+#s4>img{
+    width: 100%;
+}
+header, footer{
+    height: 60px;
+    width: 100%;
+    background-color: lightgray;
+}
+article{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
