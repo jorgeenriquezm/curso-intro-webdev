@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+#contenedor{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+#contenedor>div{
+    flex: 1;
+    overflow: hidden;
+}
+div>img{
+    width: 100%;
+}
+#contenedor>div:nth-child(1){
+    flex: 70;
+}
+#contenedor>div:nth-child(2),
+#contenedor>div:nth-child(3),
+#contenedor>div:nth-child(4){
+    flex: 10;
+}
