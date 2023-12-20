@@ -44,11 +44,14 @@ article{
     overflow: hidden;
 }
 article>p{
-    overflow-y: ;
+    height: 100%;
+    overflow-y: scroll;
 }
 footer{
     background-color: lightpink;
     height: 60px;
+    color: red;
+    font-size: 3em;
 }
 section>p{
     height: 150px;
