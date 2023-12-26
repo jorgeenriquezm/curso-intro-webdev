@@ -1,0 +1,110 @@
+*{box-sizing: border-box;}
+:root{
+    --m-estandar:6px;
+    --m-xl:12px;
+    --m-xxl:20px;
+    --gris-claro:#CCC;
+}
+#marca{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#tags{
+    width: 70%;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: var(--m-estandar);
+    border-bottom: 4px solid var(--gris-claro);
+    padding-bottom: 4px;
+}
+#tags a{
+    text-decoration: none;
+    color: var(--gris-claro);
+}
+#tags ul{
+    display: flex;
+    flex: 1;
+}
+#tags li{
+    flex-grow: 1;
+}
+#marcoNegro{
+    display: flex;
+    color: white;
+    width: 70%;
+    height: 50px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+#logo{
+    /* Le ponemos la tipo de Google Fonts */
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.75rem;
+}
+.botonRojo{
+    font-family: "Roboto", sans-serif;  
+    background-color: red;
+    padding: 11px;
+}
+#iniciaSesion{
+    font-family: "Roboto", sans-serif;
+    margin-top: var(--m-estandar);
+    margin-bottom: var(--m-estandar);
+    text-align: center;
+    width: 70%;
+    color: var(--gris-claro);
+    font-weight: bold;
+}
+main{
+    margin-top: 4rem;
+    border-top: 2px solid var(--gris-claro);
+    padding-top: 10px;
+}
+#noticiaPrincipal{
+    position: relative;
+}
+#noticiaPrincipal img{
+    width: 100%;
+}
+#noticiaPrincipal>.abajo{
+    padding: 0 10px;
+}
+#noticiaPrincipal h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#noticiaPrincipal .autor{
+    font-size: .8125rem;
+    line-height: 1.3em;
+    color: #000;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-top: var(--m-xl);
+    margin-bottom: var(--m-xxl);
+}
+#noticiaPrincipal .titulo-noticia-relacionada{
+    font-size: 0.85rem;
+    padding-left: 15px;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: var(--m-xxl);
+}
+#noticiaPrincipal .titulo-noticia-relacionada:before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #d11031;
+    position: relative;
+    left: -10px;
+    top: 10px;
+    display: block;
+    
+}
+
+
+
