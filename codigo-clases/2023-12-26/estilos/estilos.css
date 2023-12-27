@@ -12,10 +12,9 @@
 }
 #tags{
     width: 70%;
-    justify-content: space-between;
+    overflow-x: scroll;
     display: flex;
     margin-bottom: var(--m-estandar);
-    border-bottom: 4px solid var(--gris-claro);
     padding-bottom: 4px;
 }
 #tags a{
@@ -24,11 +23,11 @@
 }
 #tags ul{
     display: flex;
+    gap: 10px;
     flex: 1;
+    white-space: nowrap;
 }
-#tags li{
-    flex-grow: 1;
-}
+
 #marcoNegro{
     display: flex;
     color: white;
