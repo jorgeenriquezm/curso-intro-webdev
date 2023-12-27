@@ -1,0 +1,14 @@
+#padre{
+    background-color: lightblue;
+    display: flex;
+    height: auto;
+}
+.hijo:nth-last-of-type(1){
+    background-color: lightcoral;
+    /* align-self: stretch; */
+    min-height: 100%;
+}   
+.hijo:nth-last-of-type(2){
+    background-color: lightgoldenrodyellow;
+    height: 200px;
+}
