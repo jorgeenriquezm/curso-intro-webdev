@@ -1,0 +1,13 @@
+body{
+    background-image: linear-gradient(to top, #a8edea 0%, #1786ab 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+main{
+    background-image: url('../img/fondo.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    background-size: 100%;
+}
