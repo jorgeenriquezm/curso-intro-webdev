@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+
+}
+#contenedor>header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+nav>ul{
+    display: flex;
+    gap: 20px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+nav i{
+    color: red;
+}
+main{
+    position: relative;
+    background-color: #f1f19e;
+    background-image: linear-gradient(2deg, #f1f19e 0%, #fffee5 100%);
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+main>h1{
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    font-weight: bold;
+    font-size: 2.2rem;
+    max-width: 260px;
+}
+main>img{
+    position: relative;
+    top: -75px;
+    left: calc(50% - 420px);
+}
+#callToAction{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    width: 250px;
+    line-height: 2rem;
+}
+#callToAction>h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.fakeBtn{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    margin-top: 2rem;
+    border-radius: 30px;
+    transition: all 0.25s;
+}
+.fakeBtn:hover{
+    background-color: rgb(27, 116, 27);
+}
+#contenedor>footer{
+    background-color: #296b29;
+    height: 250px;
+}
+footer{
+    color: #dbffdb;
+    font-size: 1.1rem;
+}
+footer>div{
+    height: 50%;
+}
+footer>.arriba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed #dbffdb
+}
+footer>.abajo{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+footer>.abajo>div{
+    width: 25%;
+    justify-content: center;
+    padding-top: 2em;
+}
+footer h4, footer h5{
+    font-size: 0.85rem;
+    color: #67ae67;
+}
+footer h5{
+    font-size: 0.75rem;
+}
+footer p{
+    font-size: 0.7rem;
+    color: rgb(173, 240, 173);
+}
+footer a{
+    font-size: 0.65rem;
+    color: beige;
+    text-decoration: none;
+}
+
+
