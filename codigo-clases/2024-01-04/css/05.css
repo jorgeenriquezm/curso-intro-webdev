@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    height: 100vh;
+}
+main{
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#semaforo1, #semaforo2, #semaforo3{
+    align-self: stretch;
+    align-items: center;
+}
+#semaforo1{
+    background-color: aliceblue;
+}
+#semaforo2{
+    background-color: lightgray;
+}
+#semaforo3{
+    background-color: lightskyblue;
+}
+.fila{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fila>div{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
