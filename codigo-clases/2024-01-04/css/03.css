@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    height: 100vh;
+}
+main{
+    background-color: bisque;
+    height: 50vh;
+    display: flex;
+}
+main>div{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
