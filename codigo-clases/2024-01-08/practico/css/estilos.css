@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
+}
+#seccion_1{
+    background-color:bisque;
+    padding-bottom: 3rem;
+}
+#seccion_2{
+    background-color:chocolate;
+    color: bisque;
+}
+#destacado{
+    display: flex;
+    flex-wrap: wrap;
+}
+#destacado>img{
+    flex-grow: 1;
+    width: 60%;
+}
+#destacado>div{
+    flex-grow: 1;
+    width: 40%;
+    padding-top: 3rem;
+}
+#destacado-data{
+    font-size: 2rem;
+}
+#destacado-data span{
+    color: chocolate;
+}
+#destacado-data button{
+    background-color: chocolate;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+}
+.fila-productos h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: chocolate;
+}
+.galeria{
+    display: flex;
+    padding: 0 3rem;
+    flex-wrap: wrap;
+}
+.galeria>div{
+    width: 25%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.galeria img{
+    max-width: 100%;
+}
+#seccion_2{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+#seccion_2 h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: beige;
+}
+footer{
+    display: flex;
+    padding: 3rem;
+    background-color: #3e3d3d;
+    color: white;
+    display: flex;
+}
+footer>div{
+    flex-grow: 1;
+}
+footer h3{
+    margin-bottom: 1rem;
+    color: chocolate;
+}
+footer a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
