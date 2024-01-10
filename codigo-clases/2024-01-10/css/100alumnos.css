@@ -1,0 +1,13 @@
+*{box-sizing: border-box;}
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.alumno{
+    background-color: antiquewhite;
+    padding: 1rem;
+}
