@@ -1,6 +1,13 @@
 //Math.random() nos genera un número aleatorio entre 0 y 1 (nunca será 1)
 console.log(Math.random())
 
+//con toFixed() ponemos el número de decimales que queramos
+//toFixed(2) nos dará el resultado con 2 decimales
+console.log(Math.random().toFixed(2))
+//toFixed(4) no dara el resultado con 4 decimales
+console.log(Math.random().toFixed(4))
+
+
 //Nos genera un número entre 0 y 100 (nunca será 100)
 console.log(Math.random()*100)
 //Generar un número entre 0 y casi 100
