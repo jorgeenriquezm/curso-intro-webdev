@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(246, 216, 221);
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    background-color: pink;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+}
+#circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    transform: rotateZ(90deg);
+    cursor: pointer;
+}
+#tiempo, #puntos{
+    position: absolute;
+    font-size: 3em;
+    top: 10px;
+    font-weight: bold;
+}
+#puntos{
+    left: 10px;
+}
+#tiempo{
+    right: 10px;
+    color: black;
+}
