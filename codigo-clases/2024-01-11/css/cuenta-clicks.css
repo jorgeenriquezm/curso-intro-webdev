@@ -47,3 +47,12 @@ main{
     right: 10px;
     color: black;
 }
+button{
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    top: calc(50% - 23px);
+    left: calc(50% - 50px);
+    cursor: pointer;
+    display: none;
+}
