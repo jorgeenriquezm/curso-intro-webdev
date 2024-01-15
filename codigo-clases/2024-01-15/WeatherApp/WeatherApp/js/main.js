@@ -18,13 +18,35 @@ const miData = [
         "termometro":3
     },
 ]
+/* Guardamos en variables todos los elementos del interface
+que vamos a estar modificando. Todo lo que se vaya a modificar 
+más de una vez es mejor tenerlo en variables para evitar excesivos querySelectors */
+let contenedor = document.querySelector('#container')
+let estado = document.querySelector('#estado img')
+let termometro = document.querySelector('#termometro img')
+let temperatura = document.querySelector('#temperatura')
+let nombre = document.querySelector('#nombre-ciudad')
 let miSelect = document.querySelector('select')
+
+//Empezamos a escuchar el evento change del selector
 miSelect.addEventListener('change', ()=>{
-    console.log(miSelect.value)
     miData.forEach(ciudad=>{
+        //Y recorremos el array con la info para buscar si hay alguna igual a la que ha elegido el usuario
+        //Utilizamos toLowerCase() para pasar a minúsculas todo
+        //Ya que en el array, los nombres contienen mayúsculas y en el value del select no
         if(ciudad.ciudad.toLocaleLowerCase()==miSelect.value){
-            console.log(ciudad)
-            document.querySelector('#estado img').src=`./img/iconos/${ciudad.estado}.png`
+            //Si hay alguna coincidencia, empezamos a modificar valores de los elemento de pantalla
+            //los backticks nos permiten utilizar variables dentro de strings
+            //`Este es un string donde podemos insertar una ${variable} :)`
+            estado.src=`./img/iconos/${ciudad.estado}.png`
+            termometro.src=`./img/iconos/termometro-${ciudad.termometro}.png`
+            contenedor.style.backgroundImage = `url(./img/${ciudad.ciudad.toLocaleLowerCase()}.webp)`
+            //Este elemento estaba inicialmente oculto, lo ponemos visible antes de darle valor
+            nombre.style.display='flex'
+            nombre.innerHTML=ciudad.ciudad
+            //Ídem al elemento anterior
+            temperatura.style.display='flex'
+            temperatura.innerHTML=ciudad.temperatura+'º'
         }
     })
 })
