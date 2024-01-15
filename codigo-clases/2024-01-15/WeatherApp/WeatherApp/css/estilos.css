@@ -1,0 +1,33 @@
+*{box-sizing: border-box;}
+html, body{
+    background-color: rgb(183, 237, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#container{
+    background-color: rgb(241, 241, 241);
+    width: 400px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    position: relative;
+}
+#estado{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}

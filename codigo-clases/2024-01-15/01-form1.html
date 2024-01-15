@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario" required>
+        <input type="password" name="pwd" id="pwd" placeholder="Escribe tu contraseña" required>
+        <input type="number" name="cantidad" id="cantidad" min=1 max=10 placeholder="¿Cuantas unidades quieres">
+        
+        <select name="genero" id="genero" required>
+            <option value="0">Elije tu opción</option>
+            <option value="m">Masculino</option>
+            <option value="f">Femenino</option>
+            <option value="nd">No determinado</option>
+            <option value="o">Otro</option>
+        </select>
+        
+        <input type="submit" value="Enviar info">
+    </form>
+    <script src="js/01.js"></script>
+</body>
+</html>
