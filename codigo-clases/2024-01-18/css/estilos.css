@@ -30,7 +30,7 @@ html, body{
     font-size: 2rem;
     cursor: pointer;
     transition: all 0.25s;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .pulsador:hover{
     opacity: 1;
