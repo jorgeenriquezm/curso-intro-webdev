@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Añadir libro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <h1>Añadir libro</h1>
+        <form action="" id="formulario-guardar">
+            <input type="text" name='sku' id="sku" placeholder="SKU" required>
+            <input type="text" name='titulo' id="titulo" placeholder="Título del libro" required>
+            <input type="text" name='autor' id="autor" placeholder="Autor del libro" required>
+            <input type="number" name='anio' id="anio" max=2024 placeholder="Año de edición" required>
+            <select name="reservado" id="reservado" required>
+                <option value="9"disabled>¿Reservado?</option>
+                <option value="0">No</option>
+                <option value="1">Si</option>
+            </select>
+            <input type="submit" id='btnGuardar' value="GUARDAR">
+        </form>
+    </main>
+    <div id="menuIcon"><i class="fa-solid fa-bars"></i></div>
+    <div id="menu">
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-circle-plus"></i> Añadir un libro</a>
+            <a href="list.html"><i class="fa-solid fa-list-ol"></i> Listado de libros</a>
+            <a href="reservar.html"><i class="fa-solid fa-book-bookmark"></i> Reservar un libro</a>
+            <a href="borrar.html"><i class="fa-solid fa-trash"></i> Borrar un libro</a>
+            <i id='btnCerrarMenu' class="fa-solid fa-circle-xmark"></i>
+        </nav>
+    </div>
+    <script src="https://kit.fontawesome.com/ef81c9d4ec.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

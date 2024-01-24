@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Reservar libro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <h1>Borrar libro</h1>
+        <form action="" id="formulario-borrar">
+            <input type="text" name='sku' id="sku" required placeholder="SKU a buscar">
+            <input type="submit" id='btnBuscar' value="BUSCAR">
+        </form>
+        <div id="seleccionado"></div>
+    </main>
+    <div id="menuIcon"><i class="fa-solid fa-bars"></i></div>
+    <div id="menu">
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-circle-plus"></i> Añadir un libro</a>
+            <a href="list.html"><i class="fa-solid fa-list-ol"></i> Listado de libros</a>
+            <a href="reservar.html"><i class="fa-solid fa-book-bookmark"></i> Reservar un libro</a>
+            <a href="borrar.html"><i class="fa-solid fa-trash"></i> Borrar un libro</a>
+            <i id='btnCerrarMenu' class="fa-solid fa-circle-xmark"></i>
+        </nav>
+    </div>
+    <script src="https://kit.fontawesome.com/ef81c9d4ec.js" crossorigin="anonymous"></script>
+    <script src="js/borrar.js"></script>
+</body>
+</html>
