@@ -1,0 +1,24 @@
+let elementos = [1,2,3,4,5,6,7,8,9,10]
+console.log('##############################')
+for(i=0;i<=9;i++){
+    console.log(elementos[i])
+}
+console.log('##############################')
+for(i=9;i>=0;i--){
+    console.log(elementos[i])
+}
+console.log('##############################')
+elementos.forEach(elemento=>console.log(elemento))
+console.log('##############################')
+for(i=0;i<=8;i+=2){
+    console.log(elementos[i])
+}
+console.log('##############################')
+for(i=2;i<=50;i+=2){
+    document.write(`<p>${i}</p>`)
+}
+console.log('##############################')
+document.write('<p>##############################</p>')
+for(i=100;i>=50;i--){
+    document.write(`<p>${i}</p>`)
+}
