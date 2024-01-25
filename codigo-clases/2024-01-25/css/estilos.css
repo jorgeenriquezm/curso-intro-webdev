@@ -1,0 +1,29 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+}
+body{
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 33.33%);
+    grid-template-areas: "header header header header"
+    "main main main aside"
+    "footer footer footer footer";
+}
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+main{
+    background-color: rgb(10, 53, 53);
+    grid-area: main;
+}
+aside{
+    background-color: beige;
+    grid-area: aside;
+}
+footer{
+    background-color: blueviolet;
+    grid-area: footer;
+}

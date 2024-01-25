@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#navbar-main{
+    display: grid;
+    grid-template-rows: 60px 39px 30px;
+}
+#navbar-main>#f1{
+    background-color: #131921;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% auto 25%;
+}
+#f1_izquierda{
+    display: flex;
+    max-height: 60px;
+}
+#f1_izquierda>#logo{
+    padding: 2px 4px;
+    flex: 0 0 35%;
+}
+#f1_izquierda>#ubicacion{
+    color: white;
+    padding: 2px 4px;
+    font-size: 12px;
+}
+#f1_izquierda img, #f1_derecha img{
+    max-width: 100%;
+}
+#f1_derecha{
+    font-size: 12px;
+    display: flex;
+}
+#f1_derecha>div{
+    padding: 2px 4px;
+}
+#f1_derecha>div:nth-of-type(1), #f1_derecha>div:nth-of-type(4){
+    flex: 0 0 30px;
+}
+#f2{
+    color: white;
+    font-size: 14px;
+}
+#f2 a{
+    color: white;
+    text-decoration: none;
+    
+}
+#f2_izquierda{
+    flex: 0 0 70%;
+    justify-content: flex-start;
+    padding: 4px;
+}
+#f2_izquierda a{
+    padding-right: 16px;
+}
+#f2_derecha{
+    display: flex;
+    flex: 0 0 30%;
+    justify-content: flex-end;
+    padding: 4px;
+}
+#f2_derecha>div:nth-of-type(1){
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+#f2_derecha>div:nth-of-type(2){
+    flex-grow: 2;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+#listado{
+    background-color: white;
+    padding: 14px 10px;
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+
+    gap: 14px;
+}
+.producto{
+    background-color: #c5c7c7;
+    padding: 10px 12px;
+}
+.producto img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.flex{
+    display: flex;
+}
+.flex-centrado{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+#navbar-main>div:nth-of-type(2){
+    background-color: #232f3e;
+}
+#navbar-main>div:nth-of-type(3){
+    background-color: #e8e9eb;
+    font-size: 10px;
+    display: flex;
+}
+main#ofertas{
+    background-color: #eaeded;
+    padding: 14px 18px 18px;
+}
+#nav-subnav{
+    flex-grow: 1;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+#nav-subnav a{
+    text-decoration: none;
+    color: #333;
+}
+#nav-subnav a:hover{
+    color: #e47911;
+    border-bottom: 2px solid #f90;
+}
+
+
+
