@@ -16,7 +16,9 @@ if(esMobile){
     const menuMobile = document.querySelector('#menu')
     const btnMenuMobile = document.querySelector('#btnMenuMobile')
     btnMenuMobile.addEventListener('click', ()=>{
-        menuMobile.style.display='grid' 
+        menuMobile.style.display='grid'
+        contenido.innerHTML=''
+        menuMobile.style.zIndex = 500
     })
     //Guardamos el botón/icono que cierra el menú
     const btnCerrarMenu = document.querySelector('#btnCerrarMenu')
@@ -26,19 +28,95 @@ if(esMobile){
     })
     const cargando = document.querySelector('#cargando')
 
+
+
+
+
+
+
+
+
+
+    
+    function cargaPeliMobile(urlApi){
+        cargando.style.display='grid'
+        fetch(urlApi)
+        .then(data=>data.json())
+        .then(info=>{
+            contenedor.innerHTML=''
+            cargando.style.display='none'
+            menuMobile.style.display='none'
+            btnMenuMobile.style.display='block'
+            console.log(info)
+
+
+                const ficha = document.createElement('article')
+                ficha.classList.add('ficha')
+                const titulo = document.createElement('p')
+                titulo.innerHTML = info.title
+                const imagen = document.createElement('img')
+                imagen.src = `img/${info.episode_id}.png`
+                ficha.appendChild(titulo) 
+                ficha.appendChild(imagen)
+                contenedor.appendChild(ficha)
+
+        })
+        .catch(error=>{new Error(error)})
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function cargaMobile(urlApi){
         cargando.style.display='grid'
         fetch(urlApi)
         .then(data=>data.json())
         .then(info=>{
+            contenedor.innerHTML=''
             cargando.style.display='none'
             menuMobile.style.display='none'
             btnMenuMobile.style.display='block'
             const informacion = info.results
             informacion.forEach(elemento=>{
+                const ficha = document.createElement('article')
+                ficha.classList.add('ficha')
+
                 const titulo = document.createElement('p')
                 titulo.innerHTML = elemento.title
-                contenedor.appendChild(titulo)
+
+                const director = document.createElement('p')
+                director.innerHTML = elemento.director
+
+                const enlace = document.createElement('p')
+                enlace.classList.add('masInfo')
+                enlace.innerHTML = 'Más info'
+                enlace.addEventListener('click', ()=>{
+                    console.log(elemento.url)
+                    cargaPeliMobile(elemento.url)
+                })
+
+
+                ficha.appendChild(titulo) 
+                ficha.appendChild(director) 
+                ficha.appendChild(enlace)              
+                contenedor.appendChild(ficha)
+                console.log(elemento)
             })
         })
         .catch(error=>{new Error(error)})

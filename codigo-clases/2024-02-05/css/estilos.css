@@ -24,6 +24,7 @@ html, body{
 }
 #menu{
     background-color: lightgray;
+    position: relative;
 }
 #menu li{
     font-size: 1.75rem;
@@ -48,4 +49,18 @@ html, body{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+.ficha{
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.ficha img{
+    margin-top: 1rem;
+    max-width: 100%;
+}
+.masInfo{
+    font-size: 0.8rem;
+    text-align: right;
 }
