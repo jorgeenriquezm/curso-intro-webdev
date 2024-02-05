@@ -1,0 +1,51 @@
+*{box-sizing: border-box;}
+html, body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+#btnMenuMobile, #btnCerrarMenu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    font-weight: bold;
+}
+#btnCerrarMenu{
+    display: block;
+    color: darkred;
+    
+}
+#splash, #menu, #cargando{
+    overflow: hidden;
+    background-color: black;
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+#menu{
+    background-color: lightgray;
+}
+#menu li{
+    font-size: 1.75rem;
+}
+#cargando{
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+#cargando img{
+    max-width: 20%;
+    place-self: center;
+}
+#splash img{
+    width: 100%;;
+}
+#contenido{
+    padding: 20px 10px;
+    max-height: calc(100% - 50px);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
