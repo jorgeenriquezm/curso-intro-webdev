@@ -16,7 +16,7 @@ if(esMobile){
     const btnMenuMobile = document.querySelector('#btnMenuMobile')
     btnMenuMobile.addEventListener('click', ()=>{
         menuMobile.style.display='grid'
-        contenido.innerHTML=''
+        //contenido.innerHTML=''
         menuMobile.style.zIndex = 500
     })
     //Guardamos el botón/icono que cierra el menú
@@ -37,8 +37,12 @@ if(esMobile){
             console.log(info)
                 const ficha = document.createElement('article')
                 ficha.classList.add('ficha')
-                const titulo = document.createElement('p')
+                const titulo = document.createElement('h2')
                 titulo.innerHTML = info.title
+                const director = document.createElement('span')
+                director.innerHTML = `(${info.director})`
+                titulo.appendChild(director)
+
                 const imagen = document.createElement('img')
                 imagen.src = `img/${info.episode_id}.png`
                 ficha.appendChild(titulo) 

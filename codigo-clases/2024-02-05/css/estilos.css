@@ -30,18 +30,19 @@ html, body{
     font-size: 1.75rem;
 }
 #cargando{
-    color: white;
+    background-color: rgba(0, 0, 0, 0.783);
     position: absolute;
     top: 0;
     width: 100%;
     display: none;
+    z-index: 5000;
 }
 #cargando img{
     max-width: 20%;
     place-self: center;
 }
 #splash img{
-    width: 100%;;
+    width: 100%;
 }
 #contenido{
     padding: 20px 10px;
@@ -55,6 +56,14 @@ html, body{
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
+}
+.ficha h2{
+    font-weight: bold;
+}
+.ficha h2>span{
+    font-weight: normal;
+    font-size: 0.75rem;
+    margin-left: 5px;
 }
 .ficha img{
     margin-top: 1rem;
