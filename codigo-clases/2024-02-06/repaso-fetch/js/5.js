@@ -13,15 +13,12 @@ function renderizaPersonaje(info){
     imagen.src = '/img/random.png'
     izquierda.appendChild(imagen)
 
-
     let derecha = document.createElement('div')
     ficha.appendChild(derecha)    
-
 
     let nombre = document.createElement('p')
     nombre.classList.add('nombre')
     nombre.innerHTML=`Name: ${info.name}`
-
 
     let altura = document.createElement('p')
     altura.classList.add('altura')
