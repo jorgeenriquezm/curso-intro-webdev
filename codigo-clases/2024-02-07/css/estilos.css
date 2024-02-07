@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    padding: 10px;
+}
+.ficha{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ficha{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 33% auto;
+    margin-bottom: 1rem;
+}
+.ficha img{
+    max-width: 100%;
+}
+.ficha p{
+    margin-bottom: 10px;
+}
+.ficha span{
+    font-weight: bold;
+}
