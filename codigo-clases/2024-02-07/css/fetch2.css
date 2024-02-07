@@ -1,0 +1,35 @@
+*{box-sizing: border-box;}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(227, 226, 226);
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    background-color: lightgray;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    height: 100vh;
+    padding: 10px;
+}
+.ficha{
+    background-color: rgb(184, 184, 184);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.ficha span{
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.puntero{
+    cursor: pointer;
+}
+div.columna:nth-child(2){
+    overflow-y: scroll;
+    padding-right: 10px;
+    max-height: 100vh;
+}
