@@ -52,6 +52,7 @@ function cargaPelicula(cual, donde){
 }
 function renderizaPelicula(pelicula){
     const columna = contenedor.querySelector('div.columna:nth-child(1)')
+    columna.innerHTML=''
     const ficha = document.createElement('div')
     ficha.classList.add('ficha')
 
