@@ -4,6 +4,9 @@ html, body{
     padding: 0;
     width: 100%;
     height: 100%;
+    display: grid;
+    place-content: center;
+    font-family: "Roboto", sans-serif;
 }
 #caja{
     width: 400px;
@@ -13,6 +16,7 @@ html, body{
     bottom: 10px;
     right: 10px;
     padding: 20px;
+    display: none;
 }
 #caja-interior{
     display: grid;
@@ -28,9 +32,57 @@ html, body{
     gap: 20px;
 }
 .fila>p{
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     display: grid;
     place-content: center;
 }
+/********************************************************************/
+/*************************ESTILOS DEL POPUP**************************/
+/********************************************************************/
+.notificationCard {
+    color: white;
+    width: 220px;
+    height: 280px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 35px;
+    gap: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+    border-radius: 20px;
+  }
+  
+  .bellIcon {
+    width: 50px;
+    margin: 20px 0px;
+  }
+  
+  .bellIcon path {
+    fill: rgb(226, 9, 9);
+  }
+  
+  .notificationHeading {
+    color: white;
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+  
+  .notificationPara {
+    color: white;
+    font-size: 0.6em;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  
+  @media(min-width:768px){
+    #caja{
+        display: block;
+    }
+    .notificationCard{
+        display: none;
+    }
+  }
