@@ -1,0 +1,47 @@
+*{box-sizing: border-box;}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+}
+main>img{
+    max-width: 100%;
+}
+aside{
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7);
+    display: grid;
+    place-content: center;
+    sliderRotacion.addEventListener('input',(e)=>{
+        imagen.style.transform = `rotate(${e.target.value}deg)`
+    })
+}
+.panel{
+    background-color: white;
+    padding: 15px;
+}
+.boton{
+    width: 50px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+#botonMenu{
+    display: none;
+}
+input{
+    width: 100%;
+}
