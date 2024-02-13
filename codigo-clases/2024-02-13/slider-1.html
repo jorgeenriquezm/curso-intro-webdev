@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider to background-color</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+    <link rel="stylesheet" href="css/slider-1.css">
+</head>
+<body>
+    <div id="caja">
+        <div id="caja-interior">
+            <div class="fila">
+                <input type="range" name="rojo" id="rojo" min="0" max="255" value="255">
+                <p id='campoRojo' class="valor">255</p>
+            </div>
+            <div class="fila">
+                <input type="range" name="verde" id="verde" min="0" max="255" value="255">
+                <p id='campoVerde' class="valor">255</p>
+            </div>
+            <div class="fila">
+                <input type="range" name="azul" id="azul" min="0" max="255" value="255">
+                <p id='campoAzul' class="valor">255</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/slider-1.js"></script>
+</body>
+</html>
