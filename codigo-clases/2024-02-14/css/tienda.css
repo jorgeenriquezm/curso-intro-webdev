@@ -17,6 +17,26 @@ nav>ul>li>a{
     color: black;
     font-weight: bolder;
 }
+#listado{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    grid-auto-rows: auto;
+}
+#cabecera-tienda{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+#listado>.ficha{
+    background-color: lightblue;
+    padding: 10px;
+}
+#listado>.ficha>img{
+    max-width: 100%;
+}
 
 
 
