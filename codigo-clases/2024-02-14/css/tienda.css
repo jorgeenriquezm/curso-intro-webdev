@@ -30,12 +30,32 @@ nav>ul>li>a{
     text-align: right;
     padding: 10px;
 }
+#carrito span{
+    font-weight: bold;
+    color: red;
+}
 #listado>.ficha{
     background-color: lightblue;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 #listado>.ficha>img{
     max-width: 100%;
+}
+.ficha>.titulo{
+    font-size: x-large;
+    padding: 10px 0;
+}
+.ficha>.atc{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: rgb(50, 113, 176);
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 
