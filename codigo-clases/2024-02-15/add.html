@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir ítem a la tienda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+    <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card-switch">
+            <label class="switch">
+               <div class="flip-card__inner">
+                  <div class="flip-card__front">
+                     <div class="title">Añadir ítem</div>
+                     <form class="flip-card__form" action="">
+                        <input class="flip-card__input" id='sku' name="sku" placeholder="SKU" type="text" maxlength="10" required>
+                        <input class="flip-card__input" id='imagen' name="imagen" placeholder="Imagen (url)" type="url" required>
+                        <input class="flip-card__input" id='titulo' name="titulo" placeholder="Título" type="text" maxlength="20" required>
+                        <input class="flip-card__input" id='precio' name="precio" placeholder="Precio" type="number" min="1" required>
+                        <input class="flip-card__input" id='stock' name="stock" placeholder="Stock disponible" type="number" min="0" required>
+                        <textarea class="flip-card__input" id='descripcion' name="descripcion" placeholder="Descripción del producto" rows="5" required></textarea>
+                        <button id="guardar-item" class="flip-card__btn">GUARDAR</button>
+                     </form>
+                  </div>
+               </div>
+            </label>
+        </div>   
+   </div>
+   <script src="js/add.js"></script>
+</body>
+</html>
