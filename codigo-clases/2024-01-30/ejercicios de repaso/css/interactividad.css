@@ -1,0 +1,10 @@
+.verde{
+    background-color: aquamarine;
+    height: 50px;
+}
+.rojo{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: red;
+}

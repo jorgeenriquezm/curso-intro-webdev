@@ -1,0 +1,29 @@
+*{box-sizing: border-box;}
+main{
+    padding: 10px;
+}
+.ficha{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.ficha-columnas{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 33% auto;
+}
+.ficha-columnas img{
+    max-width: 100%;
+    border-radius: 4px 0 0 4px;
+}
+#loading{
+    display: none;
+    place-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}

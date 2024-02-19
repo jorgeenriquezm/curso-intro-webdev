@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+    <link rel="stylesheet" href="css/formulario1.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="logo">
+                <img src="https://creamostuvideo.com/wp-content/uploads/2021/05/discord-logo.png" alt="Logo">
+            </div>
+            <h2>Get started!</h2>
+            <button>Sign in with Google</button>
+            <button>Sign in with Facebook</button>
+        </section>
+        <section>
+            <h2>Register</h2>
+            <div id="contenedor">
+                <form action="#">
+                    <div class="linea">
+                        <div class="mitad">
+                            <label for="firstName">First name</label>
+                            <input type="text" id="firstName" name="firstName" maxlength="15">
+                        </div>
+                        <div class="mitad">
+                            <label for="lastName">Last name</label>
+                            <input type="text" id="lastName" name="lastName" maxlength="20">
+                        </div>
+                    </div>
+                    <div class="linea block">
+                        <label for="email">Your email address</label>
+                        <input type="email" name="email" id="email" maxlength="40">
+                    </div>
+                    <div class="linea">
+                        <div class="mitad">
+                            <label for="pwd1">Password</label>
+                            <input type="password" id="pwd1" name="pwd1" maxlength="15">
+                        </div>
+                        <div class="mitad">
+                            <label for="pwd2">Confirm password</label>
+                            <input type="password" id="pwd2" name="pwd2" maxlength="15">
+                        </div>
+                    </div>
+
+                    <div class="linea">
+                        <button>Sign up</button>
+                    </div>
+
+                    <div class="linea">
+                        <div class="mitad">
+                            <p class="negrita">Already a member</p>
+                        </div>
+                        <div class="mitad texto-derecha">
+                            Go to <a href="https://www.google.es">sign in</a>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

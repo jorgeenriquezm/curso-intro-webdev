@@ -1,0 +1,27 @@
+*{box-sizing: border-box;}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(66,66,66);
+    display: grid;
+    place-content: center;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 0 0 0 0 auto;
+    background-color: rgb(100,100,100);
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+}
+button{
+    width: 100%;
+    background-color: darkslategray;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

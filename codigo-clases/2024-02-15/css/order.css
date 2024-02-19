@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main>div{
+    background-color: aqua;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*TODOS LOS DIV TIENEN ORDER 0, AL QUE QUEREMOS MOVER LE 
+PONEMOS ORDER 1 Y LOS QUE TIENEN QUE IR DEBAJO, ORDER 2*/
+main>div:nth-last-of-type(){
+    order: 1;
+}
+main>div:nth-of-type(4){
+    order: 2;
+}

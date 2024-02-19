@@ -1,0 +1,9 @@
+html, body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.tooltip{
+    display: none;
+    position: absolute;
+}
