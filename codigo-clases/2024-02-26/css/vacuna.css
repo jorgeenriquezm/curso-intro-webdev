@@ -1,0 +1,44 @@
+*{box-sizing: border-box;}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+}
+body{
+    display: grid;
+    place-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+main>div:nth-of-type(1){
+    background-color: aqua;
+}
+main>div:nth-of-type(2){
+    justify-content: center;
+    background-color:aquamarine;
+}
+main>div:nth-of-type(3){
+    background-color:blueviolet;
+}
+.fila, .columna{
+    display: flex;
+}
+.color{
+    background-color: lightskyblue;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opcion{
+    background-color: lightsalmon;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
