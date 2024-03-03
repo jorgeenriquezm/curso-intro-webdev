@@ -1,0 +1,29 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "id": 589,
+            "idJuego": 1,
+            "idUsuario": 3,
+            "nombre": "AAA",
+            "puntos": 700,
+            "fecha": "2022-09-11T10:40:02.000Z"
+        },
+        {
+            "id": 590,
+            "idJuego": 1,
+            "idUsuario": 3,
+            "nombre": "JOR",
+            "puntos": 600,
+            "fecha": "2022-09-11T10:53:05.000Z"
+        },
+        {
+            "id": 591,
+            "idJuego": 1,
+            "idUsuario": 3,
+            "nombre": "BBB",
+            "puntos": 800,
+            "fecha": "2022-09-11T11:00:02.000Z"
+        }
+    ]
+}
