@@ -1,31 +1,32 @@
+//Instalamos lo módulos necesarios, express y mysql
 const express = require('express')
 var mysql = require('mysql');
+//y el middleware para poder trabajar con json
 var json = require('json');
+//Inicializamos app
 const app = express()
 const port = 3000
+//Inicializamos la conexión con la BBDD
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : '',
   database : 'tienda'
 });
-
+//Creamos nuestro primer endpoint para obtener los usuarios
 app.get('/usuarios', (req, res) => {
-    connection.connect();
- 
+    connection.connect(); 
     connection.query('SELECT * FROM usuarios', function (error, resultado, fields) {
     if (error) throw error;
-    //console.log('Los usuarios son: ', resultado);
-    res.json(resultado)
-
+    res.status(200).json(resultado)
     });
-    
     connection.end();
   })
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.listen(port, () => {
-  console.log(`api inicializada en el puerto: ${port}`)
-})
+  //Y al final, un endpoint genérico por si no ha capturado uno anterior
+  app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+  //Arrancamos la aplicación
+  app.listen(port, () => {
+    console.log(`api inicializada en el puerto: ${port}`)
+  })
