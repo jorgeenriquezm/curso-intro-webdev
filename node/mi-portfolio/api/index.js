@@ -19,15 +19,18 @@ var connection = mysql.createConnection({
   password : '',
   database : 'tienda'
 });
+//Creamos la conexión fuera de todo endpoint para que la haga una única vez
+connection.connect(); 
 //Creamos nuestro primer endpoint para obtener los usuarios
 app.get('/usuarios', (req, res) => {
-    connection.connect(); 
-    connection.query('SELECT * FROM usuarios', function (error, resultado, fields) {
-    if (error) throw error;
+  connection.query('SELECT * FROM usuarios', function (error, resultado, fields) {
+    if (error){
+      //connection.end();
+      throw error;
+    }
     res.status(200).json(resultado)
-    });
-    connection.end();
-  })
+  })  
+})
   //Y al final, un endpoint genérico por si no ha capturado uno anterior
   app.get('/', (req, res) => {
     res.send('Hello World!')
