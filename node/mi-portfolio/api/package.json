@@ -1,0 +1,17 @@
+{
+  "name": "mi-portfolio",
+  "version": "1.0.0",
+  "description": "API para mi portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jorge Enríquez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "json": "^11.0.0",
+    "mysql": "^2.18.1"
+  }
+}
