@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.ficha{
+    overflow: hidden;
+    grid-template-rows: 60% auto 40%;
+    display: grid;
+    height: 400px;
+}
+.ficha>p, .ficha>h2{
+    padding: 0 10px;
+}
+.ficha>h2{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.ficha>.img-container{
+    overflow: hidden;
+}
+.ficha .imagen{
+    max-width: 100%;
+}
