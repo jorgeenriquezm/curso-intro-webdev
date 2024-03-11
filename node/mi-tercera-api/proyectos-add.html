@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir un proyecto</title>
+    <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+    <link rel="stylesheet" href="css/nuevo-proyecto.css">
+</head>
+<body>
+    <form action="http://localhost:3000/proyectos/add">
+        <input type="text" id='titulo' name="titulo" maxlength="50" required placeholder="Título de tu proyecto">
+        <input type="url" id='imagen' name="imagen" maxlength="255" required placeholder="Ruta de la imagen">
+        <input type="text" id='descripcion' name="descripcion" maxlength="255" required placeholder="Descripción de tu proyecto">
+        <input type="date" id='fecha' name="fecha" required placeholder="Fecha del proyecto">
+        <input type="url" id='link' maxlength="255" required placeholder="Link para llegar al proyecto">
+        <input type="submit" value="GUARDAR">
+        <div id="status"></div>
+    </form>
+    <script src="js/nuevo-proyecto.js"></script>
+</body>
+</html>

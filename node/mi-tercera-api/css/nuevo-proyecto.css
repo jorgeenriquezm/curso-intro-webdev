@@ -1,0 +1,20 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-self: center;
+}
+input{
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
