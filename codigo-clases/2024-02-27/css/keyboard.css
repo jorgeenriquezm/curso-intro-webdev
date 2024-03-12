@@ -1,0 +1,34 @@
+*{box-sizing: border-box;}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgrey;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#keyboard>div, #cpu>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#keyboard{
+    position: relative;
+    background-color: aqua;
+}
+#cpu{
+    position: relative;
+    background-color: rgb(233, 99, 204);
+}
+.barra{
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
