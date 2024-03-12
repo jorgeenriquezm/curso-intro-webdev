@@ -9,6 +9,7 @@ main{
 }
 
 .ficha{
+    position: relative;
     overflow: hidden;
     grid-template-rows: 60% auto 40%;
     display: grid;
@@ -27,4 +28,21 @@ main{
 }
 .ficha .imagen{
     max-width: 100%;
+}
+
+.ficha .btn-editar{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    height: 45px;
+}
+.oculto{
+    display: none;
+}
+.formulario-editar-proyecto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: lightcoral;
 }
