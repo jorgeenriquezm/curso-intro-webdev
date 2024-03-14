@@ -11,7 +11,7 @@ main{
 .ficha{
     position: relative;
     overflow: hidden;
-    grid-template-rows: 60% auto 40%;
+    grid-template-rows: 55% auto 15% 15%;
     display: grid;
     height: 400px;
 }
@@ -31,11 +31,17 @@ main{
 }
 
 .ficha .btn-editar{
-    background-color: red;
+    background-color: rgb(244, 141, 141);
     color: white;
     padding: 10px;
     border-radius: 5px;
     height: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.ficha .btn-editar:hover{
+    background-color: rgb(249, 0, 0);
 }
 .oculto{
     display: none;
