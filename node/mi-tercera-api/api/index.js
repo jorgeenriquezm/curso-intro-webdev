@@ -31,18 +31,17 @@ app.post('/verify-email', (req, res) => {
   });
 })
 
-//Creamos un endpoint de tipo delete y pasamos por parámetro el id a borrar
-//También podemos hacerlo por post
-app.delete('/proyectos/delete/:id', (req, res) => {
+//Creamos un endpoint de tipo delete y recibimos el id en un json
+app.delete('/proyectos/delete', (req, res) => {
   //Nos acordamos de ponerle el LIMIT 1
-  connection.query(`DELETE from proyectos WHERE id=${req.params.id} LIMIT 1`, function (error, results, fields) {
+  connection.query(`DELETE from proyectos WHERE id=${req.body.id} LIMIT 1`, function (error, results, fields) {
     if (error) throw error;
     console.log(results)
     //affectedRows nos dice cuantos registros se han visto afectados...
     if(results.affectedRows>0){
-      res.status(200).json({msg:`Proyecto ${req.params.id} borrado con éxito ✅`})
+      res.status(200).json({msg:`Proyecto ${req.body.id} borrado con éxito ✅`})
     }else{
-      res.status(404).json({msg:`No se encuentra el proyecto ${req.params.id} 🚫`})
+      res.status(404).json({msg:`No se encuentra el proyecto ${req.body.id} 🚫`})
     }
   });
 })

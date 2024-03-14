@@ -28,6 +28,41 @@ fetch('http://localhost:3000/proyectos')
         inputOculto.setAttribute('id', 'oculto'+element.id)
         inputOculto.setAttribute('value', element.id)
 
+
+
+        //Añadimos el botón que mostrará el formulario
+        let botonDelete = document.createElement('button')
+        botonDelete.classList.add('btn-editar')
+        botonDelete.innerText = "BORRAR"
+        botonDelete.addEventListener('click', (e)=>{     
+            try {
+                fetch("http://localhost:3000/proyectos/delete", {
+                  method: "DELETE",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({id:inputOculto.value}),
+                })
+                .then(response=>{
+                    if(response.status===200){
+                        location.reload()
+                    }
+                })
+              } catch (error) {
+                console.error("Error:", error);
+              }
+
+
+
+
+
+        })
+        ficha.appendChild(botonDelete)
+
+
+
+
+
         //Añadimos el botón que mostrará el formulario
         let botonEdit = document.createElement('button')
         botonEdit.classList.add('btn-editar')
@@ -37,6 +72,22 @@ fetch('http://localhost:3000/proyectos')
             formularioEditarProyecto.classList.remove('oculto')
         })
         ficha.appendChild(botonEdit)
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
 
         //Y creamos el formulario
         let formularioEditarProyecto = document.createElement('form')
@@ -76,6 +127,23 @@ fetch('http://localhost:3000/proyectos')
             alert(`Enviado la información del proyecto ${element.id}`)
             formularioEditarProyecto.classList.add('oculto')
         })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //Y creamos también un botón para poder cerrar el form sin tener que actualizar
         let botonCerrar = document.createElement('img')
         botonCerrar.classList.add('boton-cerrar')
