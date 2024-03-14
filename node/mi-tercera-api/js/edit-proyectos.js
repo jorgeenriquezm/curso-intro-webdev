@@ -28,12 +28,33 @@ fetch('http://localhost:3000/proyectos')
         inputOculto.setAttribute('id', 'oculto'+element.id)
         inputOculto.setAttribute('value', element.id)
 
+        let botonera = document.createElement('div')
+        botonera.classList.add('botonera')
+        ficha.appendChild(botonera)
+
+        //Añadimos el botón que mostrará el formulario de editar
+        let botonEdit = document.createElement('button')
+        botonEdit.classList.add('btn')
+        botonEdit.innerText = "EDITAR"
+        botonEdit.addEventListener('click', (e)=>{
+            console.log(`Nos toca modificar el proyecto ${inputOculto.value}`)
+            formularioEditarProyecto.classList.remove('oculto')
+        })
+        botonera.appendChild(botonEdit)
 
 
-        //Añadimos el botón que mostrará el formulario
+        
+
+
+
+
+
+        //Añadimos el boton que hará el borrado real
         let botonDelete = document.createElement('button')
-        botonDelete.classList.add('btn-editar')
-        botonDelete.innerText = "BORRAR"
+        botonDelete.classList.add('btn')
+        botonDelete.classList.add('btn-alert')
+        botonDelete.classList.add('oculto')
+        botonDelete.innerText = "¿SEGURO?"
         botonDelete.addEventListener('click', (e)=>{     
             try {
                 fetch("http://localhost:3000/proyectos/delete", {
@@ -51,27 +72,24 @@ fetch('http://localhost:3000/proyectos')
               } catch (error) {
                 console.error("Error:", error);
               }
-
-
-
-
-
         })
-        ficha.appendChild(botonDelete)
+        
 
 
 
 
 
-        //Añadimos el botón que mostrará el formulario
-        let botonEdit = document.createElement('button')
-        botonEdit.classList.add('btn-editar')
-        botonEdit.innerText = "EDITAR"
-        botonEdit.addEventListener('click', (e)=>{
-            console.log(`Nos toca modificar el proyecto ${inputOculto.value}`)
-            formularioEditarProyecto.classList.remove('oculto')
+
+        //Añadimos el boton que hará el aviso previo al borrado
+        let botonPreDelete = document.createElement('button')
+        botonPreDelete.classList.add('btn')
+        botonPreDelete.classList.add('btn-warning')
+        botonPreDelete.innerText = "BORRAR"
+        botonPreDelete.addEventListener('click', (e)=>{     
+            botonDelete.classList.remove('oculto')
         })
-        ficha.appendChild(botonEdit)
+        botonera.appendChild(botonPreDelete)
+        botonera.appendChild(botonDelete)
 
 
 
@@ -122,6 +140,7 @@ fetch('http://localhost:3000/proyectos')
         let botonSubmit = document.createElement('input')
         botonSubmit.setAttribute('type', "submit")
         botonSubmit.setAttribute('value', "ACTUALIZAR")
+        botonSubmit.classList.add('btn')
         formularioEditarProyecto.appendChild(botonSubmit)       
         botonSubmit.addEventListener('click', (e)=>{
             alert(`Enviado la información del proyecto ${element.id}`)
