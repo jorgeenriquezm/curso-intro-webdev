@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir alumno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+    <link rel="stylesheet" href="css/alumnos.css">
+</head>
+<body>
+    <form action="#">
+        <input type="url" name="imagen" id="imagen" maxlength="100" required placeholder="Su imagen">
+        <input type="text" name="nombre" id="nombre" maxlength="20" required placeholder="Nombre">
+        <input type="text" name="apellidos" id="apellidos" maxlength="40" required placeholder="Apellidos">
+        <input type="text" name="dni" id="dni" maxlength="9" required placeholder="DNI - 00000000A">
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <button><i class="fa-solid fa-floppy-disk"></i></button>
+    </form>
+    <nav class="tr"><ul>
+        <li><a href="view.html"><i class="fa-solid fa-eye"></i></a></li>
+    </ul></nav>
+    <script src="https://kit.fontawesome.com/470464ab3b.js" crossorigin="anonymous"></script>
+    <script src="js/add.js"></script>
+</body>
+</html>
