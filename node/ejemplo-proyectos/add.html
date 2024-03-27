@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir proyecto</title>
+    <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <form action="/api/projects/add" method="post" enctype="multipart/form-data">
+        <label for="titulo">Título del proyecto</label>
+        <input type="text" name="titulo" id='titulo' maxlength="20" required placeholder="Título"/>
+        <label for="imagen">Selecciona la imagen</label>
+        <input type="file" name="imagen" id='imagen' required/>
+        <input type="submit" value="GUARDAR">
+    </form>
+    <script src="js/add.js"></script>
+</body>
+</html>
